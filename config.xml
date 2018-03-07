@@ -79,7 +79,6 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
-    <plugin name="cordova-custom-config" spec="^4.0.2" />
     <plugin name="cordova-plugin-console" spec="1.0.5" />
     <plugin name="cordova-plugin-device" spec="1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
@@ -91,10 +90,14 @@
     </plugin>
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
 
-    <config-file target="AndroidManifest.xml" parent="/*" mode="merge">
-        <uses-permission android:name="android.permission.CAMERA" />
-        <uses-feature android:name="android.hardware.camera" />
-        <uses-feature android:name="android.hardware.camera.autofocus" />
-    </config-file>
-    
+    <plugin name="cordova-custom-config" spec="^4.0.2" />
+
+    <platform name="android">
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-feature android:name="android.hardware.camera" />
+            <uses-feature android:name="android.hardware.camera.autofocus" />
+        </config-file>
+    </platform>
 </widget>
