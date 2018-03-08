@@ -1,0 +1,69 @@
+/* Empty. Add your own CSS if you like */
+
+
+.full
+{
+
+  background-color:#559EF2;
+   background:url(../img/fond.jpg) no-repeat center center fixed; 
+  background-size: cover; ;
+  padding-top:5vh;
+color:white;
+text-align:center;
+z-index: 100 !important;
+}
+.full h1
+{
+color:#124193;
+text-align: center;;
+
+}
+.full .logo
+{
+  height:25vw;
+  border-radius:50%;
+  margin:0 auto;
+display:block;
+margin-bottom:20px;
+}
+
+
+h1 {font-size:23px;}
+.bar.bar-stable
+{
+}
+.bar-stable .title {
+	color:white;
+}
+.tabsSelect-content 
+{
+	display: none;
+}
+.tabsSelect-content.active
+{
+	display: block;
+}
+.avatar-img
+{
+    width: auto;
+    height: 80px;
+}
+body
+{
+
+}
+.item-md-label input
+{
+  background-color:#124193 !important;
+  color:white;
+}
+.item-md-label input:focus ~ .input-label, .item-md-label input.used ~ .input-label
+{
+
+color:#124193 !important;
+
+}
+.hero.no-header
+{
+  height:180px !important;
+}
