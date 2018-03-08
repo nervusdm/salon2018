@@ -24,51 +24,19 @@ $scope.scanBarcode = function($scope) {
 
 
 
+var permissions = cordova.plugins.permissions;
+permissions.requestPermission(permissions.CAMERA, successCallback, errorCallback);
 
-/*
-try{
-  const permissions = cordova.plugins.permissions;
-  permissions.checkPermission(permissions.CAMERA, function( status ){
-    console.log(status)
-    if ( status.hasPermission ) {
-    }
-    else 
-    {
-      alert("L'application a besoin de pouvoir prendre une photo pour scanner les qrCode. Une fenêtre va s'ouvrir pour vous demander cette permission.");
-      permissions.requestPermission(permissions.CAMERA, success, error);
-      alert('On continue');
-    }
-  });
-
-}catch(e){
-  console.log('caught error in a chunk of code');
-  alert("zut");
-  alert(e);
-  console.error(e);
+function successCallback()
+{
+  alert('cool on a accès');
+}
+function errorCallback()
+{
+  alert("zut on a pas accès")
 }
 
 
-function error() {
-  alert("Vous n'avez pas autorisé l'application à prendre une photo.");
-}
-
-function success( status ) {
-  if( !status.hasPermission ) error();
-}
-
-
-permissions.requestPermission(permissions.CAMERA, successz, errorz);
-
-function errorz() {
-  console.warn('Camera permission is not turned on');
-}
-
-function successz( status ) {
-  alert(status);
-  if( !status.hasPermission ) error();
-}
-
-*/
 
 cordova.plugins.barcodeScanner.scan(
   function (result) {
