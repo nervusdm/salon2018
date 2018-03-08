@@ -41,6 +41,8 @@ try{
 
 }catch(e){
   console.log('caught error in a chunk of code');
+  alert("zut");
+  alert(e);
   console.error(e);
 }
 
