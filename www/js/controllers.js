@@ -25,7 +25,7 @@ $scope.scanBarcode = function($scope) {
 
 
 
-
+/*
 try{
   const permissions = cordova.plugins.permissions;
   permissions.checkPermission(permissions.CAMERA, function( status ){
@@ -68,7 +68,7 @@ function successz( status ) {
   if( !status.hasPermission ) error();
 }
 
-
+*/
 
 cordova.plugins.barcodeScanner.scan(
   function (result) {
