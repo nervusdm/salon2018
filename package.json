@@ -6,6 +6,8 @@
         "cordova-android": "^6.2.3",
         "cordova-custom-config": "^4.0.2",
         "cordova-plugin-android-permissions": "^1.0.0",
+        "cordova-plugin-barcodescanner": "^0.7.4",
+        "cordova-plugin-compat": "^1.2.0",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
         "cordova-plugin-splashscreen": "~4.0.1",
