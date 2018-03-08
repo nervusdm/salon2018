@@ -26,24 +26,25 @@ $scope.scanBarcode = function($scope) {
 
 
 
-cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
-    switch(status){
-        case cordova.plugins.diagnostic.permissionStatus.NOT_REQUESTED:
-            console.log("Permission not requested");
-            break;
-        case cordova.plugins.diagnostic.permissionStatus.GRANTED:
-            console.log("Permission granted");
-            break;
-        case cordova.plugins.diagnostic.permissionStatus.DENIED:
-            console.log("Permission denied");
-            break;
-        case cordova.plugins.diagnostic.permissionStatus.DENIED_ALWAYS:
-            console.log("Permission permanently denied");
-            break;
+try{
+  const permissions = cordova.plugins.permissions;
+  permissions.checkPermission(permissions.CAMERA, function( status ){
+    console.log(status)
+    if ( status.hasPermission ) {
     }
-}, function(error){
-    console.error(error);
-});
+    else 
+    {
+      alert("L'application a besoin de pouvoir prendre une photo pour scanner les qrCode. Une fenêtre va s'ouvrir pour vous demander cette permission.");
+      permissions.requestPermission(permissions.CAMERA, success, error);
+    }
+  });
+
+}catch(e){
+  console.log('caught error in a chunk of code');
+  alert("zut");
+  alert(e);
+  console.error(e);
+}
 
 
 function error() {

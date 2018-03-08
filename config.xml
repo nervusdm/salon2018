@@ -84,7 +84,6 @@
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
     <plugin name="cordova-custom-config" spec="^4.0.2" />
     <engine name="android" spec="^6.2.3" />
-    <feature name="Camera">
-    <param name="android-package" value="org.apache.cordova.CameraLauncher" />
-</feature>
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+
 </widget>
