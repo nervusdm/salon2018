@@ -36,6 +36,7 @@ try{
     {
       alert("L'application a besoin de pouvoir prendre une photo pour scanner les qrCode. Une fenêtre va s'ouvrir pour vous demander cette permission.");
       permissions.requestPermission(permissions.CAMERA, success, error);
+      alert('On continue');
     }
   });
 
@@ -54,6 +55,19 @@ function error() {
 function success( status ) {
   if( !status.hasPermission ) error();
 }
+
+
+permissions.requestPermission(permissions.CAMERA, successz, errorz);
+
+function errorz() {
+  console.warn('Camera permission is not turned on');
+}
+
+function successz( status ) {
+  alert(status);
+  if( !status.hasPermission ) error();
+}
+
 
 
 cordova.plugins.barcodeScanner.scan(
