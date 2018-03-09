@@ -86,4 +86,5 @@
     <plugin name="cordova-plugin-whitelist" source="npm" />
     <plugin name="cordova-plugin-camera" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
+    <engine name="browser" spec="~5.0.3" />
 </widget>

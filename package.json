@@ -4,12 +4,15 @@
     "description": "hexaSalon: An Ionic project",
     "dependencies": {
         "cordova-android": "^6.2.3",
+        "cordova-browser": "^5.0.3",
         "cordova-custom-config": "^4.0.2",
         "cordova-plugin-android-permissions": "^1.0.0",
         "cordova-plugin-barcodescanner": "^0.7.4",
+        "cordova-plugin-camera": "^2.4.1",
         "cordova-plugin-compat": "^1.2.0",
         "cordova-plugin-console": "1.0.5",
         "cordova-plugin-device": "1.1.4",
+        "cordova-plugin-qrscanner": "^2.5.0",
         "cordova-plugin-splashscreen": "~4.0.1",
         "cordova-plugin-statusbar": "2.2.1",
         "cordova-plugin-whitelist": "git+https://github.com/apache/cordova-plugin-whitelist.git",
@@ -50,10 +53,15 @@
             "phonegap-plugin-barcodescanner": {
                 "CAMERA_USAGE_DESCRIPTION": "To scan barcodes"
             },
-            "cordova-plugin-android-permissions": {}
+            "cordova-plugin-android-permissions": {},
+            "cordova-plugin-camera": {
+                "CAMERA_USAGE_DESCRIPTION": " ",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+            }
         },
         "platforms": [
-            "android"
+            "android",
+            "browser"
         ]
     }
 }
