@@ -3,7 +3,7 @@
     "version": "1.1.1",
     "description": "hexaSalon: An Ionic project",
     "dependencies": {
-        "cordova-android": "^6.2.3",
+        "cordova-android": "6.2.3",
         "cordova-browser": "^5.0.3",
         "cordova-custom-config": "^4.0.2",
         "cordova-plugin-android-permissions": "^1.0.0",
@@ -62,7 +62,6 @@
             "cordova-plugin-qrscanner": {}
         },
         "platforms": [
-            "android",
             "browser"
         ]
     }
