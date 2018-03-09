@@ -45,6 +45,7 @@
 		09234A5449FE48C4BB1F0C10 /* UIImage+CropScaleOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26570B8FEF0F49458B14FCE3 /* UIImage+CropScaleOrientation.m */; };
 		42B2A6470D7F459BA626368F /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFAE72F88554C5E9231ED6F /* CDVCamera.m */; };
 		1EC4F8F918F24FC6AA4E0E6E /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = A92BE6B1CBF4420892E89CAE /* CDVJpegHeaderWriter.m */; };
+		01D794DFEF364730916440B3 /* QRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE866319669450A9C105EB8 /* QRScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		979FA86CE7DC47BE9769E8CC /* CDVCamera.h */ = {isa = PBXFileReference; name = "CDVCamera.h"; path = "cordova-plugin-camera/CDVCamera.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		05A574B8067B41F4A667DD61 /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; name = "CDVJpegHeaderWriter.h"; path = "cordova-plugin-camera/CDVJpegHeaderWriter.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		9A12B009DFE54753B4CC6B1A /* CDVExif.h */ = {isa = PBXFileReference; name = "CDVExif.h"; path = "cordova-plugin-camera/CDVExif.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		9CE866319669450A9C105EB8 /* QRScanner.swift */ = {isa = PBXFileReference; name = "QRScanner.swift"; path = "cordova-plugin-qrscanner/QRScanner.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				979FA86CE7DC47BE9769E8CC /* CDVCamera.h */,
 				05A574B8067B41F4A667DD61 /* CDVJpegHeaderWriter.h */,
 				9A12B009DFE54753B4CC6B1A /* CDVExif.h */,
+				9CE866319669450A9C105EB8 /* QRScanner.swift */,
 			);
 			name = Plugins;
 			path = "hexaSalon/Plugins";
@@ -413,6 +416,7 @@
 				09234A5449FE48C4BB1F0C10 /* UIImage+CropScaleOrientation.m in Sources */,
 				42B2A6470D7F459BA626368F /* CDVCamera.m in Sources */,
 				1EC4F8F918F24FC6AA4E0E6E /* CDVJpegHeaderWriter.m in Sources */,
+				01D794DFEF364730916440B3 /* QRScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

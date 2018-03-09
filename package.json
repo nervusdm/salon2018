@@ -15,6 +15,7 @@
         "cordova-plugin-qrscanner": "^2.5.0",
         "cordova-plugin-splashscreen": "~4.0.1",
         "cordova-plugin-statusbar": "2.2.1",
+        "cordova-plugin-swift-support": "^3.1.1",
         "cordova-plugin-whitelist": "git+https://github.com/apache/cordova-plugin-whitelist.git",
         "gulp": "^3.5.6",
         "gulp-concat": "^2.2.0",
@@ -57,7 +58,8 @@
             "cordova-plugin-camera": {
                 "CAMERA_USAGE_DESCRIPTION": " ",
                 "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
-            }
+            },
+            "cordova-plugin-qrscanner": {}
         },
         "platforms": [
             "android",
