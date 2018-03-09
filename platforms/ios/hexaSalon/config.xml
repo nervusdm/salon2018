@@ -41,6 +41,9 @@
     <feature name="Camera">
         <param name="ios-package" value="CDVCamera" />
     </feature>
+    <feature name="QRScanner">
+        <param name="ios-package" value="QRScanner" />
+    </feature>
     <name>hexaSalon</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="contact@lavitrinemedicale.fr" href="http://www.lavitrinemedicale.fr/">HexaPlus Santé</author>
@@ -110,7 +113,4 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="fullscreen" value="false" />
-    <feature name="QRScanner">
-        <param name="ios-package" value="QRScanner" />
-    </feature>
 </widget>

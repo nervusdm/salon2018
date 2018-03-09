@@ -3,7 +3,7 @@ angular.module('app.controllers', ['ngCordova'])
 .controller('scanQRCodeCtrl',  // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope,$state,$timeout, $stateParams,$http,$cordovaBarcodeScanner,$ionicPopup,intervenant  ) {
+function ($scope,$state,$timeout, $stateParams,$http,$cordovaBarcodeScanner,$ionicPopup,intervenant,$window  ) {
 
 /*
 cordova.plugins.diagnostic.requestCameraRollAuthorization(function(granted){
@@ -15,6 +15,10 @@ cordova.plugins.diagnostic.requestCameraRollAuthorization(function(granted){
 alert("cool")
 
 */
+
+
+
+
 $scope.intervenants = intervenant.intervenant;
 
 $scope.scanBarcode = function($scope) {
@@ -24,21 +28,12 @@ $scope.scanBarcode = function($scope) {
 
 
 
-var permissions = cordova.plugins.permissions;
-permissions.requestPermission(permissions.CAMERA, successCallback, errorCallback);
-
-function successCallback()
-{
-  alert('cool on a accès');
-}
-function errorCallback()
-{
-  alert("zut on a pas accès")
-}
 
 
 
-cordova.plugins.barcodeScanner.scan(
+
+
+$cordovaBarcodeScanner.scan(
   function (result) {
     var tab= {code:result.text};
     $http.post( url_projet + '/rha/appsalon/hello/',tab)
