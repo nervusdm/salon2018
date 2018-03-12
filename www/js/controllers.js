@@ -21,15 +21,9 @@ alert("cool")
 
 $scope.intervenants = intervenant.intervenant;
 
-$scope.scanBarcode = function($scope) {
+$scope.scanBarcode = function($scope) 
+{
 //alert("Merci d'accepter l'application à utiliser l'appareil photo pour scanner le qrCode !!")
-
-
-
-
-
-
-
 
 try
 {
@@ -84,7 +78,6 @@ $cordovaBarcodeScanner.scan(
         }
         );
 
-};
 }
 catch(e)
 {
@@ -93,6 +86,9 @@ catch(e)
 
 
 
+
+
+}
 
 
 
