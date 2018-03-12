@@ -81,7 +81,8 @@ $cordovaBarcodeScanner.scan(
 }
 catch(e)
 {
-  alert('Une erreur a eu lieu');
+  alert('Une erreur a eu lieu sur le barcode');
+  alert(e);
 }
 
 
