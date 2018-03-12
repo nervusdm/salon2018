@@ -13,10 +13,6 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"SQLitePlugin\"><param name=\"ios-package\" value=\"SQLitePlugin\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
               "count": 1
             },
@@ -98,9 +94,6 @@
     "phonegap-plugin-barcodescanner": {
       "PACKAGE_NAME": "com.ionicframework.hexasalon646222"
     },
-    "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "com.ionicframework.hexasalon646222"
-    },
     "ionic-plugin-keyboard": {
       "PACKAGE_NAME": "com.ionicframework.hexasalon646222"
     },
@@ -148,14 +141,6 @@
       "pluginId": "phonegap-plugin-barcodescanner",
       "clobbers": [
         "cordova.plugins.barcodeScanner"
-      ]
-    },
-    {
-      "id": "cordova-sqlite-storage.SQLitePlugin",
-      "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-      "pluginId": "cordova-sqlite-storage",
-      "clobbers": [
-        "SQLitePlugin"
       ]
     },
     {
@@ -258,7 +243,6 @@
   ],
   "plugin_metadata": {
     "phonegap-plugin-barcodescanner": "4.0.1",
-    "cordova-sqlite-storage": "2.0.4",
     "ionic-plugin-keyboard": "2.2.1",
     "cordova-custom-config": "4.0.2",
     "cordova-plugin-android-permissions": "1.0.0",

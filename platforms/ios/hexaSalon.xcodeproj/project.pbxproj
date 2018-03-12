@@ -25,8 +25,6 @@
 		694FA125216F4697818C3349 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E164CA60BD4CD8AA33A284 /* QuartzCore.framework */; };
 		167F01F77B124B10A263A299 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F292D4B25442B89433547A /* CoreImage.framework */; };
 		91AD46B176764F4596F53441 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4E5A6D5D644EA6BADA48F7 /* AudioToolbox.framework */; };
-		654F61957B844DF9AB819521 /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A19ED076604E04865CB5E6 /* SQLitePlugin.m */; };
-		F5179EE1ED5248F0BEDBAE54 /* sqlite3.c in Resources */ = {isa = PBXBuildFile; fileRef = D9BDB86B16AE400890B0C15D /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_THREADSAFE=1 -DSQLITE_DEFAULT_MEMSTATUS=0 -DSQLITE_OMIT_DECLTYPE -DSQLITE_OMIT_DEPRECATED -DSQLITE_OMIT_PROGRESS_CALLBACK -DSQLITE_OMIT_SHARED_CACHE -DSQLITE_TEMP_STORE=2 -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE -DSQLITE_DEFAULT_PAGE_SIZE=1024 -DSQLITE_DEFAULT_CACHE_SIZE=2000"; }; };
 		318E563B1713491EA4611D0C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345B19EA457846F6A8C802F1 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D91C3A41509741338DF72BC4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912E388CFEBF4D22B5898CF7 /* CoreLocation.framework */; };
 		A19A8DF80C18468EB8FBA602 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E85FC0083A7B433C9C857388 /* CoreBluetooth.framework */; };
@@ -96,10 +94,6 @@
 		F5E164CA60BD4CD8AA33A284 /* QuartzCore.framework */ = {isa = PBXFileReference; name = "QuartzCore.framework"; path = "System/Library/Frameworks/QuartzCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		F1F292D4B25442B89433547A /* CoreImage.framework */ = {isa = PBXFileReference; name = "CoreImage.framework"; path = "System/Library/Frameworks/CoreImage.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		BD4E5A6D5D644EA6BADA48F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		48A19ED076604E04865CB5E6 /* SQLitePlugin.m */ = {isa = PBXFileReference; name = "SQLitePlugin.m"; path = "cordova-sqlite-storage/SQLitePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		D9BDB86B16AE400890B0C15D /* sqlite3.c */ = {isa = PBXFileReference; name = "sqlite3.c"; path = "cordova-sqlite-storage/sqlite3.c"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3E4B499AFBC9467E99A77F29 /* SQLitePlugin.h */ = {isa = PBXFileReference; name = "SQLitePlugin.h"; path = "cordova-sqlite-storage/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		BB6F5A93B13E477581E777CD /* sqlite3.h */ = {isa = PBXFileReference; name = "sqlite3.h"; path = "cordova-sqlite-storage/sqlite3.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		345B19EA457846F6A8C802F1 /* ImageIO.framework */ = {isa = PBXFileReference; name = "ImageIO.framework"; path = "System/Library/Frameworks/ImageIO.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		912E388CFEBF4D22B5898CF7 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		E85FC0083A7B433C9C857388 /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
@@ -266,10 +260,6 @@
 				B681977C67954D7B8E13C2DA /* CDVBarcodeScanner.mm */,
 				18DB75BA391B4E69BF37C4A8 /* zxing-all-in-one.cpp */,
 				B3EA67FD63484ADAB054EE22 /* zxing-all-in-one.h */,
-				48A19ED076604E04865CB5E6 /* SQLitePlugin.m */,
-				D9BDB86B16AE400890B0C15D /* sqlite3.c */,
-				3E4B499AFBC9467E99A77F29 /* SQLitePlugin.h */,
-				BB6F5A93B13E477581E777CD /* sqlite3.h */,
 				89DBEBEE9D3447C8857098F5 /* IonicKeyboard.m */,
 				897C0C9A6DC642F9A533A47C /* IonicKeyboard.h */,
 				AAA457A5B45843A1BD4C1C24 /* CDVLogger.m */,
@@ -405,8 +395,6 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				5DC192ABFE6E4CC7BEEF867E /* CDVBarcodeScanner.mm in Resources */,
 				3E953E1FA179477C838CF9EA /* zxing-all-in-one.cpp in Resources */,
-				654F61957B844DF9AB819521 /* SQLitePlugin.m in Sources */,
-				F5179EE1ED5248F0BEDBAE54 /* sqlite3.c in Resources */,
 				ECA192CA0B9E45DC98F29CF8 /* IonicKeyboard.m in Sources */,
 				53F66CA35DF84CC1993CE2E3 /* CDVLogger.m in Sources */,
 				8CEE3DD316DC4DB4A6FCB7D1 /* CDVDevice.m in Sources */,
