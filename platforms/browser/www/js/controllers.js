@@ -31,8 +31,8 @@ $scope.scanBarcode = function($scope) {
 
 
 
-try {
-
+try
+{
 $cordovaBarcodeScanner.scan(
   function (result) {
     var tab= {code:result.text};
@@ -67,9 +67,6 @@ $cordovaBarcodeScanner.scan(
       }
      // alert(response);
     });
-
-
-
   },
   function (error) {
     alert("Erreur lors du scan: " + error);
@@ -87,19 +84,17 @@ $cordovaBarcodeScanner.scan(
         }
         );
 
-
-
-
-
-
-
 };
-
 }
-catch (e) {
-
-alert('Erreur fatale lors du scan.');
+catch(e)
+{
+  alert('Une erreur a eu lieu');
 }
+
+
+
+
+
 
 
 })
